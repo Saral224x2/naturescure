@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:195af2945317f1550df69b5aa7379bdbf804d562b2f396c4262bbeb872783e8e
-size 880
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "npm install --legacy-peer-deps && npm install --prefix frontend --legacy-peer-deps && npm run build --prefix frontend --legacy-peer-deps",
+    "dev": "nodemon backend/server.js"
+  },
+  "keywords": [],
+  "author": "Divyanshu Kushwaha",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^6.0.1",
+    "@google/generative-ai": "^0.22.0",
+    "axios": "^1.7.9",
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.6.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemailer": "^7.0.10",
+    "nodemon": "^3.1.9"
+  }
+}
