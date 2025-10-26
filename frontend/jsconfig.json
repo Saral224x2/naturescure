@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4ea6c0df907418ea3f417d842606375e0c2529a8c5a2b514c71d5dd1a618f0e9
-size 111
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"]
+      }
+    }
+  }
+  
